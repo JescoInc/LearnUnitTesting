@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace LearningUnitTesting
 {
-    class Program
+    public class Utilities
     {
-        static void Main(string[] args)
+        public static double Multiply(double a, double b)
         {
-
-            double result = Utilities.Multiply(5, 10);
+            // Write code here to satisfy the tests
+            return double.MinValue;
         }
+
     }
 }
