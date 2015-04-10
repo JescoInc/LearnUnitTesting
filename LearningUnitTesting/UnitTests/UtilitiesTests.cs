@@ -7,6 +7,7 @@ namespace UnitTests
     [TestClass]
     public class UtilitiesTests
     {
+        #region Multiply Tests
         [TestMethod]
         public void MultiplyTest1()
         {
@@ -46,7 +47,6 @@ namespace UnitTests
         [TestMethod]
         public void MultiplyTest5()
         {
-            double result = Utilities.Multiply(0, 1);
             Assert.AreNotEqual(1, Utilities.Multiply(0, 1));
         }
 
@@ -58,5 +58,33 @@ namespace UnitTests
             Assert.AreEqual(0, result);
 
         }
+        #endregion
+
+        #region Divide Tests
+        [TestMethod]
+        public void Divide10by5()
+        {
+            double a = 10;
+            double b = 5;
+            double expected = 2;
+            double result = Utilities.Divide(a, b);
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void Divide10by0()
+        {
+            double result = Utilities.Divide(10, 0);
+            Assert.AreEqual(double.NaN, result);
+        }
+
+        [TestMethod]
+        public void Divide0by10()
+        {
+            double expected = 0 / 10;
+            double result = Utilities.Divide(0, 10);
+            Assert.AreEqual(expected, result);
+        }
+        #endregion
     }
 }

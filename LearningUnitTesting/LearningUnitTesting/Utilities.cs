@@ -13,5 +13,11 @@ namespace LearningUnitTesting
             // Write code here to satisfy the tests
             return a * b;
         }
+
+        public static double Divide(double a, double b)
+        {
+            // divide a / b, but make sure you arent' dividing by zero
+            return double.MinValue;
+        }
     }
 }
