@@ -91,7 +91,7 @@ namespace UnitTests
         public void convertString()
         {
             string a = "10";
-            double b = 5;
+            double b = 10;
             double result = Utilities.Convert(a);
             Assert.AreEqual(a, b);
         }
