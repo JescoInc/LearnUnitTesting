@@ -94,7 +94,7 @@ namespace UnitTests
             string a = "10";
             double b = 10;
             double result = Utilities.Convert(a);
-            Assert.AreEqual(a, b);
+            Assert.AreEqual(result, b);
         }
 
         [TestMethod]
