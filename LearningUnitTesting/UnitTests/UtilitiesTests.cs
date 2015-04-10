@@ -42,5 +42,21 @@ namespace UnitTests
         {
             Assert.AreNotEqual(1000, Utilities.Multiply(1, 10));
         }
+
+        [TestMethod]
+        public void MultiplyTest5()
+        {
+            double result = Utilities.Multiply(0, 1);
+            Assert.AreNotEqual(1, Utilities.Multiply(0, 1));
+        }
+
+        [TestMethod]
+        public void MultiplyTest6()
+        {
+            double result = Utilities.Multiply(0, 1);
+           // Assert.AreEqual(0, Utilities.Multiply(0, 1));
+            Assert.AreEqual(0, result);
+
+        }
     }
 }
