@@ -11,8 +11,7 @@ namespace LearningUnitTesting
         public static double Multiply(double a, double b)
         {
             // Write code here to satisfy the tests
-            return double.MinValue;
+            return a * b;
         }
-
     }
 }
