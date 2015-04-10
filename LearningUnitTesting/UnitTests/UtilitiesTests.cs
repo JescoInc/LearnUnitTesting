@@ -114,6 +114,15 @@ namespace UnitTests
             Assert.AreEqual(Utilities.Convert(a), b);
 
         }
+
+    [TestMethod]
+        public void decimalDouble()
+        {
+            string a = "12.79";
+            double b = 12.79;
+
+            Assert.AreEqual(Utilities.Convert(a), b);
+        }
         #endregion
     }
 }
