@@ -24,9 +24,9 @@ namespace LearningUnitTesting
                 return double.NaN;
         }
 
-        public static string Convert(string a, double b)
+        public static double Convert(string val)
         {
-            return double.Parse(a);
+            return double.MinValue;
         }
     }
 }

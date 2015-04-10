@@ -92,9 +92,8 @@ namespace UnitTests
         {
             string a = "10";
             double b = 5;
-            double expected = 15;
-            double result = Utilities.Convert(a, b);
-            Assert.AreEqual(expected, result);
+            double result = Utilities.Convert(a);
+            Assert.AreEqual(a, b);
         }
     }
 }
