@@ -17,7 +17,11 @@ namespace LearningUnitTesting
         public static double Divide(double a, double b)
         {
             // divide a / b, but make sure you arent' dividing by zero
-            return double.MinValue;
+            if (b != 0)
+                return a / b;
+
+            else
+                return a / double.NaN;
         }
     }
 }
