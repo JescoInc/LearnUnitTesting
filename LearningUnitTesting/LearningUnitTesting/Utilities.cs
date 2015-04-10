@@ -21,7 +21,12 @@ namespace LearningUnitTesting
                 return a / b;
 
             else
-                return a / double.NaN;
+                return double.NaN;
+        }
+
+        public static string Convert(string a, double b)
+        {
+            return double.Parse(a);
         }
     }
 }

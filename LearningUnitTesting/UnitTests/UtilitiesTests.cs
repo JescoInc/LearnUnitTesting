@@ -54,7 +54,7 @@ namespace UnitTests
         public void MultiplyTest6()
         {
             double result = Utilities.Multiply(0, 1);
-           // Assert.AreEqual(0, Utilities.Multiply(0, 1));
+            // Assert.AreEqual(0, Utilities.Multiply(0, 1));
             Assert.AreEqual(0, result);
 
         }
@@ -86,5 +86,15 @@ namespace UnitTests
             Assert.AreEqual(expected, result);
         }
         #endregion
+
+        [TestMethod]
+        public void convertString()
+        {
+            string a = "10";
+            double b = 5;
+            double expected = 15;
+            double result = Utilities.Convert(a, b);
+            Assert.AreEqual(expected, result);
+        }
     }
 }
