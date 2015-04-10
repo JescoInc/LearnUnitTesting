@@ -89,7 +89,7 @@ namespace UnitTests
 
         #region Convert string to double
         [TestMethod]
-        public void convertString()
+        public void convertToDouble()
         {
             string a = "10";
             double b = 10;
@@ -99,12 +99,12 @@ namespace UnitTests
 
         [TestMethod]
 
-        public void stringPassedAsDouble()
+        public void passedAsDouble()
         {
             string a = "pencil";
             double b = 10;
             double result = Utilities.Convert(a);
-            Assert.AreEqual(a, b);
+            Assert.AreEqual(double.NaN, Utilities.Convert("pencil"));
         }
         #endregion
     }
