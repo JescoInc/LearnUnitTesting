@@ -87,6 +87,7 @@ namespace UnitTests
         }
         #endregion
 
+        #region Convert string to double
         [TestMethod]
         public void convertString()
         {
@@ -105,5 +106,6 @@ namespace UnitTests
             double result = Utilities.Convert(a);
             Assert.AreEqual(a, b);
         }
+        #endregion
     }
 }
