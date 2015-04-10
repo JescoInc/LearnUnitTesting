@@ -102,9 +102,17 @@ namespace UnitTests
         public void passedAsDouble()
         {
             string a = "pencil";
-            double b = 10;
-            double result = Utilities.Convert(a);
-            Assert.AreEqual(double.NaN, Utilities.Convert("pencil"));
+            Assert.AreEqual(double.NaN, Utilities.Convert(a));
+        }
+
+        [TestMethod]
+        public void negativeDouble()
+        {
+            string a = "-12";
+            double b = -12;
+
+            Assert.AreEqual(Utilities.Convert(a), b);
+
         }
         #endregion
     }
