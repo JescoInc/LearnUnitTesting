@@ -95,5 +95,15 @@ namespace UnitTests
             double result = Utilities.Convert(a);
             Assert.AreEqual(a, b);
         }
+
+        [TestMethod]
+
+        public void stringPassedAsDouble()
+        {
+            string a = "pencil";
+            double b = 10;
+            double result = Utilities.Convert(a);
+            Assert.AreEqual(a, b);
+        }
     }
 }

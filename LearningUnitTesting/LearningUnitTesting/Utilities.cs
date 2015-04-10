@@ -26,7 +26,7 @@ namespace LearningUnitTesting
 
         public static double Convert(string val)
         {
-            return double.MinValue;
+            return double.NaN;
         }
     }
 }
