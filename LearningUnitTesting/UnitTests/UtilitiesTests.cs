@@ -9,7 +9,7 @@ namespace UnitTests
     {
         #region Multiply Tests
         [TestMethod]
-        public void MultiplyTest1()
+        public void Multiply_5x10e50()
         {
             double a = 5;
             double b = 10;
@@ -20,7 +20,7 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void MultiplyTest2()
+        public void Multiply_1x0e0()
         {
             double a = 1;
             double b = 0;
@@ -31,7 +31,7 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void MultiplyTest3()
+        public void Multiply_10x10n0()
         {
             double result = Utilities.Multiply(10, 10);
 
@@ -39,19 +39,19 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void MultiplyTest4()
+        public void Multiply_1x10n1000()
         {
             Assert.AreNotEqual(1000, Utilities.Multiply(1, 10));
         }
 
         [TestMethod]
-        public void MultiplyTest5()
+        public void Multiply_0x1n1()
         {
             Assert.AreNotEqual(1, Utilities.Multiply(0, 1));
         }
 
         [TestMethod]
-        public void MultiplyTest6()
+        public void Multiply_0x1e0()
         {
             double result = Utilities.Multiply(0, 1);
             // Assert.AreEqual(0, Utilities.Multiply(0, 1));
@@ -62,7 +62,7 @@ namespace UnitTests
 
         #region Divide Tests
         [TestMethod]
-        public void Divide10by5()
+        public void Divide_10by5e2()
         {
             double a = 10;
             double b = 5;
@@ -72,14 +72,14 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void Divide10by0()
+        public void Divide_10by0eNaN()
         {
             double result = Utilities.Divide(10, 0);
             Assert.AreEqual(double.NaN, result);
         }
 
         [TestMethod]
-        public void Divide0by10()
+        public void Divide_0by10()
         {
             double expected = 0 / 10;
             double result = Utilities.Divide(0, 10);
@@ -89,7 +89,7 @@ namespace UnitTests
 
         #region Convert string to double
         [TestMethod]
-        public void convertToDouble()
+        public void Convert_10()
         {
             string a = "10";
             double b = 10;
@@ -99,14 +99,14 @@ namespace UnitTests
 
         [TestMethod]
 
-        public void passedAsDouble()
+        public void Convert_Pencil()
         {
             string a = "pencil";
             Assert.AreEqual(double.NaN, Utilities.Convert(a));
         }
 
         [TestMethod]
-        public void negativeDouble()
+        public void Convert_Negative12()
         {
             string a = "-12";
             double b = -12;
@@ -116,7 +116,7 @@ namespace UnitTests
         }
 
     [TestMethod]
-        public void decimalDouble()
+        public void Convert_Decimal()
         {
             string a = "12.79";
             double b = 12.79;
