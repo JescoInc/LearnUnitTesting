@@ -87,13 +87,13 @@ namespace UnitTests
         }
         #endregion
 
-        #region Convert string to double
+        #region StringToDouble string to double
         [TestMethod]
         public void Convert_10()
         {
             string a = "10";
             double b = 10;
-            double result = Utilities.Convert(a);
+            double result = Utilities.StringToDouble(a);
             Assert.AreEqual(result, b);
         }
 
@@ -102,7 +102,7 @@ namespace UnitTests
         public void Convert_Pencil()
         {
             string a = "pencil";
-            Assert.AreEqual(double.NaN, Utilities.Convert(a));
+            Assert.AreEqual(double.NaN, Utilities.StringToDouble(a));
         }
 
         [TestMethod]
@@ -111,7 +111,7 @@ namespace UnitTests
             string a = "-12";
             double b = -12;
 
-            Assert.AreEqual(Utilities.Convert(a), b);
+            Assert.AreEqual(Utilities.StringToDouble(a), b);
 
         }
 
@@ -121,7 +121,7 @@ namespace UnitTests
             string a = "12.79";
             double b = 12.79;
 
-            Assert.AreEqual(Utilities.Convert(a), b);
+            Assert.AreEqual(Utilities.StringToDouble(a), b);
         }
         #endregion
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LearningUnitTesting
 {
-    public class Utilities
+    public static class Utilities
     {
         public static double Multiply(double a, double b)
         {
@@ -24,7 +24,7 @@ namespace LearningUnitTesting
                 return double.NaN;
         }
 
-        public static double Convert(string val)
+        public static double StringToDouble(string val)
         {
             double result;
             if (!double.TryParse(val, out result))
